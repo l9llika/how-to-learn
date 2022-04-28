@@ -7,6 +7,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  border: 1px solid red;
 }
 
 .header {
@@ -14,6 +15,8 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  border: 1px solid red;
+  background-color: #f2f2f2;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -28,4 +31,29 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.description {
+  border: 1px solid red;
+  padding: 100px 0 0 0;
+  background-color: #fff;
+}
+.digits {
+  border: 1px solid red;
+  padding: 100px 0;
+  background-color: #fff;
+}
+.feynman {
+  border: 1px solid red;
+  background-color: #f2f2f2;
+}
+.kaufman {
+  border: 1px solid red;
+  padding: 90px 0;
+  background-color: #000;
+}
+.footer {
+  border: 1px solid red;
+  padding: 60px 0;
+  background-color: #000;
 }
