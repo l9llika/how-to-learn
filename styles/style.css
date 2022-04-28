@@ -1,3 +1,6 @@
+body {
+  border: 1px solid red;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -11,18 +14,51 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  border: 1px solid red;
   background-color: #f2f2f2;
 }
-
+.header__title {
+  margin-left: 64px;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  z-index: 3;
+}
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  z-index: 3;
+}
+.header__link {
+  text-decoration: none;
+}
+.header__main-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 2;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position:absolute;
+  top: 64px;
+  right: 0px;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  z-index: 1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -32,28 +68,31 @@
   margin-right: 0;
   margin-top: 80px;
 }
-
+.logo {
+  width: 228px;
+  height: 32px;
+}
+.logo__place-header {
+  position:absolute;
+  top: 30px;
+  left: 64px;
+}
 .description {
-  border: 1px solid red;
   padding: 100px 0 0 0;
   background-color: #fff;
 }
 .digits {
-  border: 1px solid red;
   padding: 100px 0;
   background-color: #fff;
 }
 .feynman {
-  border: 1px solid red;
   background-color: #f2f2f2;
 }
 .kaufman {
-  border: 1px solid red;
   padding: 90px 0;
   background-color: #000;
 }
 .footer {
-  border: 1px solid red;
   padding: 60px 0;
   background-color: #000;
 }
