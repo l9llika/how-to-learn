@@ -240,9 +240,6 @@
   padding: 60px 0;
   background-color: #000;
 }
-.logo__place-footer {
-
-}
 .footer__columns {
   margin: auto;
   display: flex;
@@ -261,9 +258,6 @@
   line-height: 25px;
   font-style: 18px;
   font-weight: normal;
-}
-.footer__column_content_info {
-
 }
 .footer__column-heading {
   margin: 0;
