@@ -10,12 +10,13 @@
   <body>
     <div class="page">
       <header class="header">
-        <a href="#" class="logo"
-          ><img
-            src="./images/logo_place_header.svg"
-            alt="Яндекс Практикум логотип"
-            class="logo__place-header"
-        /></a>
+        <div class="logo">
+          <a href="#" class="logo__place logo__place_header"
+            ><img
+              src="./images/logo_place_header.svg"
+              alt="Яндекс Практикум логотип"
+          /></a>
+        </div>
         <!-- /.logo-->
         <h1 class="header__title">Научиться учится</h1>
         <!-- /.header__title-->
@@ -54,7 +55,7 @@
                 нужно уметь, но почему-то этому мало где учат. Что с этим
                 делать?
               </p>
-              <p class="two-columns__paragraph two-columns__paragraph_bottom">
+              <p class="two-columns__paragraph">
                 Конкретные техники и упражнения помогают изменить подход к
                 обучению, сделать его эффективным и захватывающим. Эти же
                 техники применяются на примере обучения в Практикуме.
@@ -77,7 +78,7 @@
               <p class="table__text">
                 Число нуждающихся в повышении квалификации
               </p>
-              <p class="table__text table__text-author">Всемирный Банк, 2017</p>
+              <p class="table__text">Всемирный Банк, 2017</p>
             </li>
             <li class="table__cell">
               <h3 class="table__heading">1000 терабайт</h3>
@@ -96,7 +97,7 @@
                 Число взрослых людей моложе 25 лет, не имеющих образования для
                 трудоустройства
               </p>
-              <p class="table__text table__text-author">Всемирный Банк, 2017</p>
+              <p class="table__text">Всемирный Банк, 2017</p>
             </li>
             <li class="table__cell">
               <h3 class="table__heading">17–20 лет</h3>
@@ -193,76 +194,81 @@
               </p>
             </li>
           </ul>
-          <img
-            src="./images/kaufman-triangle.svg"
-            alt="Синий треугольник"
-            class="kaufman__triangle"
-          />
+          <div class="kaufman__triangle"></div>
         </section>
         <!-- /.section kaufman -->
       </main>
       <!-- /.main -->
       <footer class="footer">
         <div class="footer__columns">
-          <div class="footer__column_content_copyright">
-            <a href="#" class="logo"
-              ><img
-                src="./images/logo_place_footer.svg"
-                alt="Яндекс Практикум логотип"
-                class="logo__place-footer"
-            /></a>
+          <div class="footer__column footer__column_content_copyright">
+            <div class="logo">
+              <a href="#" class="logo__place logo__place_footer"
+                ><img
+                  src="./images/logo_place_footer.svg"
+                  alt="Яндекс Практикум логотип"
+              /></a>
+            </div>
             <!-- /.logo-->
             <p class="footer__author">&copy; Руслан Рзаев</p>
           </div>
           <!-- /.footer__column_content_copyright-->
-          <div class="footer__column_content_info">
+          <div class="footer__column footer__column_content_info">
             <h4 class="footer__column-heading">О Практикуме</h4>
-            <ul class="footer__column-links">
-              <li class="footer__column-link">
-                <a href="#" class="footer__column-link_item">Главная</a>
-              </li>
-              <li class="footer__column-link">
-                <a href="#" class="footer__column-link_item">Концепция</a>
-              </li>
-              <li class="footer__column-link">
-                <a href="#" class="footer__column-link_item">Наставники</a>
-              </li>
-            </ul>
+            <nav class="footer__column-links">
+              <ul class="footer__list">
+                <li class="footer__column-link">
+                  <a href="#" class="footer__column-link-item">Главная</a>
+                </li>
+                <li class="footer__column-link">
+                  <a href="#" class="footer__column-link-item">Концепция</a>
+                </li>
+                <li class="footer__column-link">
+                  <a href="#" class="footer__column-link-item">Наставники</a>
+                </li>
+              </ul>
+              <!-- /.footer__list-->
+            </nav>
           </div>
           <!-- /.footer__column_content_info-->
-          <div class="footer__column_content_social">
+          <div class="footer__column footer__column_content_social">
             <h4 class="footer__column-heading">Соцсети</h4>
-            <ul class="footer__column-links">
-              <li class="footer__column-link">
-                <a href="https://facebook.com/" class="footer__column-link_item"
-                  ><img
-                    src="./images/facebook_color_white.svg"
-                    alt="Ссылка на фейсбук"
-                    class="footer__column-link_social-ico"
-                  />Facebook</a
-                >
-              </li>
-              <li class="footer__column-link">
-                <a href="https://vk.com/" class="footer__column-link_item"
-                  ><img
-                    src="./images/vk_color_white.svg"
-                    alt="Ссылка на фейсбук"
-                    class="footer__column-link_social-ico"
-                  />ВКонтакте</a
-                >
-              </li>
-              <li class="footer__column-link">
-                <a
-                  href="https://instagram.com/"
-                  class="footer__column-link_item"
-                  ><img
-                    src="./images/instagram_color_white.svg"
-                    alt="Ссылка на фейсбук"
-                    class="footer__column-link_social-ico"
-                  />Instagram</a
-                >
-              </li>
-            </ul>
+            <nav class="footer__column-links">
+              <ul class="footer__list">
+                <li class="footer__column-link">
+                  <a
+                    href="https://facebook.com/"
+                    class="footer__column-link-item"
+                    ><img
+                      src="./images/facebook_color_white.svg"
+                      alt="Ссылка на фейсбук"
+                      class="footer__social-icon"
+                    />Facebook</a
+                  >
+                </li>
+                <li class="footer__column-link">
+                  <a href="https://vk.com/" class="footer__column-link-item"
+                    ><img
+                      src="./images/vk_color_white.svg"
+                      alt="Ссылка на фейсбук"
+                      class="footer__social-icon"
+                    />ВКонтакте</a
+                  >
+                </li>
+                <li class="footer__column-link">
+                  <a
+                    href="https://instagram.com/"
+                    class="footer__column-link-item"
+                    ><img
+                      src="./images/instagram_color_white.svg"
+                      alt="Ссылка на фейсбук"
+                      class="footer__social-icon"
+                    />Instagram</a
+                  >
+                </li>
+              </ul>
+              <!-- /.footer__list-->
+            </nav>
           </div>
           <!-- /.footer__column_content_social-->
         </div>
